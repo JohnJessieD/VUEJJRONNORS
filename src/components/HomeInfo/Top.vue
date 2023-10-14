@@ -1,79 +1,101 @@
 <template>
-    <div>
-
-        <nav>
+  <div>
+    <nav>
       <div class="navbar">
         <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
-
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+            <h1>BDS</h1>
+          </div>
           <div class="menu-items">
-            <ul id="links">
-                    <router-link to="/" tag="li" exact>Home</router-link><hr>
-                    <router-link to="/manage" tag="li"  exact>Manage</router-link><hr>
-                    <router-link to="/shop_info" tag="li" exact>Shop Info</router-link><hr>
-                <router-link to="/about" tag="li" exact>About</router-link>
-                </ul>
+            <ul id="links"><router-link to="/" tag="li" exact>Home</router-link></ul>
+            <ul id="links"><router-link to="/login" tag="li" exact>LogIn</router-link></ul>
+            <ul id="links"><router-link to="/shop_info" tag="li" exact>Shop Info</router-link></ul>
+            <ul id="links"><router-link to="/about" tag="li" exact>About</router-link></ul>
+            <ul id="links"><router-link to="/manage" tag="li" exact>Manage</router-link></ul>
           </div>
         </div>
       </div>
     </nav>
-
-
-          <div>
-            <div class="hero">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-5">
-                            <div class="intro-excerpt">
-
-                                <p class="mb-4">Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are "singles" and "doubles </p>
-                                <p><h5 href="/shop" class="btn btn-secondary me-2">Shop Now</h5></p>
-                            </div>
-                        </div>
-                            <div class="col-lg-7">
-                                <div class="hero-img-wrap">
-
-                                      </div>
-                                        <div class="hero-img-wrap">
-                                    <img :src="require('@/assets/assets/images/shoes1.png')" class="img-fluid">
-                                        </div>
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div>
+      <div class="hero">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-5">
+              <div class="intro-excerpt">
+                <p class="mb-4">Cycling can help to protect you from serious diseases such as stroke, heart attack, some
+                  cancers, depression, diabetes, obesity, and arthritis.</p>
+                <p>
+                  <h5 href="/shop" class="btn btn-secondary me-2">Shop Now</h5>
+                </p>
+              </div>
             </div>
-
+            <div class="col-lg-7">
+              <div class="hero-img-wrap">
+                <img :src="require('@/assets/assets/images/img-5.png')" class="img-fluid">
+                
+                <p>
+                  The best performer: Victor A970Ace.
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Images -->
+      <div class="additional-images">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="additional-image">
+                <img :src="require('@/assets/assets/images/img-1.png')" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="additional-image">
+                <img :src="require('@/assets/assets/images/img-2.png')" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="additional-image">
+                <img :src="require('@/assets/assets/images/shoes2.png')" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </template>
+  </div>
+</template>
+    
+<script>
+//Modified by Caibal
+export default {
+  name: "Top",
+  data() {
+    return {
+      open: false,
+    }
+  },
+  methods: {
 
-    <script>
-      export default {
-        name: "Top",
-      data() {
-          return{
-          open: false,
-          }
-        },
-      methods: {
-
-          menubar: function() {
-            if(this.open){
-              this.open = false;
-              return this.open;
-            }else{
-              this.open = true;
-              return this.open;
-            }
-          }
-        },
-      };
-      //Ends
-    </script>
+    menubar: function () {
+      if (this.open) {
+        this.open = false;
+        return this.open;
+      } else {
+        this.open = true;
+        return this.open;
+      }
+    }
+  },
+};
+//Ends
+</script>
+    

@@ -21,6 +21,7 @@ body {
 hr {
   margin: 0;
 }
+
 /*Vue Classes*/
 .v-enter-active,
 .v-leave-active {
@@ -200,7 +201,7 @@ a {
       position: absolute;
       width: 255px;
       height: 217px;
-
+      
       background-size: contain;
       background-repeat: no-repeat;
       right: -100px;
@@ -329,7 +330,7 @@ a {
       content: "";
       width: 255px;
       height: 217px;
-
+    
       background-repeat: no-repeat;
       background-size: contain;
       -webkit-transform: translate(-40%, -40%);
@@ -364,14 +365,14 @@ a {
 
 .we-help-section {
   padding: 7rem 0; }
-
-
+  
+    
     .we-help-section .imgs-grid:before {
       position: absolute;
       content: "";
       width: 255px;
       height: 217px;
-
+     
       background-size: contain;
       background-repeat: no-repeat;
       -webkit-transform: translate(-40%, -40%);
