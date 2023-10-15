@@ -11,7 +11,7 @@
         </ul>
       
     </div>
-</template>A
+</template>
 
 <style>
 
